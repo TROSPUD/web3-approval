@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校内学生出校申请</title>
+    <!--<link rel="stylesheet" href="css/styles.css">-->
+    <!--时钟-->
+
+    <script>
+        function  getD1(){
+            var date=new Date();
+            var d1=date.toLocaleString();
+            document.getElementById("datetime").innerHTML =d1; 
+        }
+        setInterval("getD1();",1000);
+    </script>
+
+
+    <style>
+
+        h3 {
+            text-align: center;
+            margin: 7% 0;
+        }
+        p {text-align: center;}
+        table {
+            margin: 0 13%;
+        }
+        #star {
+            color: red;
+        }
+        .left {
+            padding: 0 4% 0 0px;
+        }
+        .right {
+            padding: 2.3% 6% 2.3% 2.3%;
+        }
+        #datetime {
+            font-size: large;
+            font-weight: bold;
+            margin: 0 auto 5% auto;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>校内学生出校申请</h2>
+    <p id="datetime"></p>
+    <table>
+        <tr>
+            <td class="left">姓名<span id="star">*</span></td>
+            <td class="right">洪梓</td>
+        </tr>
+        <tr>
+            <td class="left">学号<span id="star">*</span></td>
+            <td class="right">20337037</td>
+        </tr>
+        <tr>
+            <td class="left">培养单位<span id="star">*</span></td>
+            <td class="right">计算机学院 (软件学院)</td>
+        </tr>
+        <tr>
+            <td class="left">出校时间<span id="star">*</span></td>
+            <td class="right">2022-11-17</td>
+        </tr>
+        <tr>
+            <td class="left">返校时间<span id="star">*</span></td>
+            <td class="right">2022-11-17</td>
+        </tr>
+        <tr>
+            <td>同行人信息</td>
+        </tr>
+    </table>
+    <p class="im"><img src="2.jpg" width="340" height="402"></p>
+</body>
+</html>
